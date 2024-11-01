@@ -1,0 +1,167 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+        background-image: url("C:\Users\HP\OneDrive\Desktop\fitness pictures\download (3).jpg");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed; /* Optional: keeps background fixed when scrolling */
+        font-family: Arial, sans-serif;
+        color: #61b48c;
+        margin: 0;
+        padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #a72874;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff00d0; /* Adds a hover effect for the links */
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px;
+}
+
+.intro, .featured, .workout, .nutrition, .gallery, .contact {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on sections */
+.intro:hover, .featured:hover, .workout:hover, .nutrition:hover, .gallery:hover, .contact:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading Styles */
+h2 {
+    color: #28a745;
+    font-size: 1.8em;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #20b1de;
+    color: #fff;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ff007b;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #a79f28; /* Highlight input fields when focused */
+}
+
+button {
+    background-color: #28a745;
+    color: #fff;
+    border: moccasin;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Image Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    header {
+        padding: 10px;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .intro, .featured, .workout, .nutrition, .gallery, .contact {
+        padding: 15px;
+    }
+
+    button {
+        padding: 15px;
+    }
+    
+    
+}

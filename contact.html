@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Contact Us</title>
+    <script>
+        function submitForm(event) {
+            event.preventDefault(); 
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            const displaySection = document.getElementById('display');
+            displaySection.innerHTML = `
+                <h2>Submitted Details</h2>
+                <p><strong>Name:</strong> ${name}</p>
+                <p><strong>Email:</strong> ${email}</p>
+                <p><strong>Subject:</strong> ${subject}</p>
+                <p><strong>Message:</strong> ${message}</p>
+            `;
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="nutrition.html">Nutrition</a></li>
+                <li><a href="photos.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="contact">
+            <h2>Get in Touch</h2>
+            <form id="contactForm" onsubmit="submitForm(event)">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div id="display"></div> <!-- Section to display submitted details -->
+        </section>
+    </main>
+    <footer>
+       
+            <p>&copy; 2024 Fitness & Wellness</p>
+            <div class="social-icons">
+                <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+                    <i class="fab fa-twitter">twitter</i>
+                </a>
+                <a href="https://wa.me/your-number" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp">whatsapp</i>
+                </a>
+                <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+                    <i class="fab fa-facebook-f">facebook</i>
+                </a>
+                <a href="https://youtube.com" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-youtube">youtube</i>
+                </a>
+            </div>
+       
+    </footer>
+</body>
+</html>
+
